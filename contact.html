@@ -1,0 +1,93 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <title>Astro3000 | Contact</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/3/34/Anser_anser_1_%28Piotr_Kuczynski%29.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+  <header>
+		<a class="logo" href="index.html">
+              <img src="goose.png" alt="repl logo" />
+		</a>
+		<nav>	
+		 <ul class="nav-bar"><div class="bg"></div>
+			<li><a class="nav-link active" href="index.html">Home</a></li>
+			<li><a class="nav-link" href="index.html#projects">Projects</a></li>
+			<li><a class="nav-link" href="index.html#contact">Contact</a></li>
+		 </ul>
+			
+			<div class="hamburger">
+				<div class="line1"></div>
+            <div class="line2"></div>
+				<div class="line3"></div>
+			</div>
+		</nav>
+	</header>
+    <h1>Contact Me Here:</h1><br>
+    <br>
+    <div class="social-media">
+      <br>
+      
+      <p><i class='fab fa-discord' id="discord"></i> <a href="javascript:discord();" id="discordtag"> Astro300#0973</a><br>
+      <i class='fab fa-github'></i> <a href="https://github.com/Astro3000x"> Github</a><br>
+      📩 <a href="mailto:astro@astro3000.dev"> astro@astro3000.dev</a></p>
+      </div>
+  <style>
+    body {
+      /*background-color: #0b0c0f;*/
+      background: #0b0c0f;
+	    background-size: cover;
+	    background-position:center;
+      position: absolute;
+      top: 0px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+	   
+      color: #FFF;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+    }
+    .social-media{
+	    padding: 10px;
+	    display: flex;
+	    position: center;
+      align-items: center;
+	    justify-content:center;
+    }
+
+    .social-media a {
+      margin: 10px;
+      font-size: 2rem;
+      text-align:center;
+      display: inline-block;
+	    color: var(--main-fonts-color);
+    }
+
+    .social-media a i{
+	    cursor: pointer;
+    }
+
+    .social-media  a:hover {
+	    color: var(--main-decor-color);
+	    text-shadow: 0 0 50px var(--main-decor-color);
+    }
+    
+  </style>
+  <script>
+    function discord() {
+
+      
+
+
+  
+      navigator.clipboard.writeText("Astro3000#0973");
+      alert("Tag Copied To Clipboard");
+
+    }
+  </script>
+  </body>
+</html>
