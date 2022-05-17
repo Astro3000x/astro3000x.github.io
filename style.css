@@ -118,7 +118,13 @@ a.nav-link{
 	font-family: var(--main-font-family);
 	text-align:center;
 }
-
+.zwidget {
+	text-align:center;
+    color: var(--main-fonts-color);
+	z-index: 1;
+	margin: auto;
+	padding: 20px;
+}
  h3{
 	padding-bottom: 15px;
     letter-spacing: normal;
