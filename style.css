@@ -83,8 +83,8 @@ body {
 }
 
 .centered-box {
-    width: 400px; /* Set a fixed width for the box */
-    height: 400px; /* Set a fixed height for the box */
+    width: 20%; /* Set a fixed width for the box */
+    height: 42%; /* Set a fixed height for the box */
     color: #fff;
     background-color: rgba(255, 255, 255, 0.25);
     border: 1px solid #ccc; /* Box border */
