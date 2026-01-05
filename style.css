@@ -83,8 +83,8 @@ body {
 }
 
 .centered-box {
-    width: 20%; /* Set a fixed width for the box */
-    height: 42%; /* Set a fixed height for the box */
+    width: 400px; /* Set a fixed width for the box */
+    height: 400px; /* Set a fixed height for the box */
     color: #fff;
     background-color: rgba(255, 255, 255, 0.25);
     border: 1px solid #ccc; /* Box border */
@@ -99,6 +99,30 @@ body {
     bottom: 0;
     right: 0;
     margin: auto; /* This magic centers the absolutely positioned element */
+}
+
+@media (max-width: 768px) {
+    .centered-box {
+        width: 90vw;          /* Almost full width */
+        max-width: 400px;     /* Prevents it getting too wide on tablets */
+        height: auto;         /* Let content define height */
+        max-height: 90vh;     /* Prevent overflow off screen */
+        padding: 16px;
+
+        position: fixed;      /* More reliable centering on mobile */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* Extra-small phones */
+@media (max-width: 480px) {
+    .centered-box {
+        width: 94vw;
+        padding: 14px;
+        border-radius: 8px;
+    }
 }
 
 @keyframes animate {
