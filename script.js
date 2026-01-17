@@ -2,7 +2,7 @@
 const translations = {
     en: { intro: "Welcome to my website!\nI am a developer, guitarist, and high school student.\nHere are some photos I took:",
         quote1: "From where you're kneeling it must seem like an 18-carat run of bad luck. Truth is... the game was rigged from the start. -- Benny (Fallout: New Vegas)",
-        quote2: "You can't conceive of what I'm capable of! I'm so far beyond you! I'm like a god in human clothing! Lighting bolts shoot from my fingertips!\n-- Saul Goodman/James Morgan McGill (Better Call Saul)",
+        quote2: "You can't conceive of what I'm capable of! I'm so far beyond you! I'm like a god in human clothing! Lighting bolts shoot from my fingertips!\n-- James Morgan McGill (Better Call Saul)",
         quote3: "I am not crazy! I know he swapped those numbers. I knew it was 1216. One after Magna Carta. As if I could ever make such a mistake. Never. Never! I just - I just couldn't prove it. -- Chuck McGill (Better Call Saul)",
         studynest: "StudyNest is a web app that has tools for studying and focus.\nI made it for Student HackPad 2025, where it placed in the top 24-85 out of 215.",
         projectstitle: "Projects:",
