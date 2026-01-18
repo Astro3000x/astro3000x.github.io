@@ -4,6 +4,7 @@ const translations = {
         quote1: "From where you're kneeling it must seem like an 18-carat run of bad luck. Truth is... the game was rigged from the start. -- Benny (Fallout: New Vegas)",
         quote2: "You can't conceive of what I'm capable of! I'm so far beyond you! I'm like a god in human clothing! Lighting bolts shoot from my fingertips!\n-- James Morgan McGill (Better Call Saul)",
         quote3: "I am not crazy! I know he swapped those numbers. I knew it was 1216. One after Magna Carta. As if I could ever make such a mistake. Never. Never! I just - I just couldn't prove it. -- Chuck McGill (Better Call Saul)",
+        quote4: "War, war never changes. -- Narrator (Fallout: New Vegas)",
         studynest: "StudyNest is a web app that has tools for studying and focus.\nI made it for Student HackPad 2025, where it placed in the top 24-85 out of 215.",
         projectstitle: "Projects:",
         projectssubtitle: "These are some of my projects:",
@@ -12,6 +13,7 @@ const translations = {
         quote1: "From where you're kneeling it must seem like an 18-carat run of bad luck. Truth is... the game was rigged from the start. -- Benny (Fallout: New Vegas)",
         quote2: "You can't conceive of what I'm capable of! I'm so far beyond you! I'm like a god in human clothing! Lighting bolts shoot from my fingertips!\n-- Saul Goodman/James Morgan McGill (Better Call Saul)",
         quote3: "I am not crazy! I know he swapped those numbers. I knew it was 1216. One after Magna Carta. As if I could ever make such a mistake. Never. Never! I just - I just couldn't prove it. -- Chuck McGill (Better Call Saul)",
+        quote4: "War, war never changes. -- Narrator (Fallout: New Vegas)",
         studynest: "StudyNest est une application web qui propose des outils pour étudier et se concentrer.\nJe l'ai créé pour Student HackPad 2025, où il s'est classé parmi les 24-85 meilleurs sur 215.",
         projectstitle: "Projets:",
         projectssubtitle: "Voici quelques-uns de mes projets:",
@@ -20,6 +22,7 @@ const translations = {
         quote2: "You can't conceive of what I'm capable of! I'm so far beyond you! I'm like a god in human clothing! Lighting bolts shoot from my fingertips!\n-- Saul Goodman/James Morgan McGill (Better Call Saul)",
         quote3: "I am not crazy! I know he swapped those numbers. I knew it was 1216. One after Magna Carta. As if I could ever make such a mistake. Never. Never! I just - I just couldn't prove it. -- Chuck McGill (Better Call Saul)",
         quote1: "From where you're kneeling it must seem like an 18-carat run of bad luck. Truth is... the game was rigged from the start. -- Benny (Fallout: New Vegas)",
+        quote4: "War, war never changes. -- Narrator (Fallout: New Vegas)",
         studynest: "A StudyNest egy webes alkalmazás, amely eszközöket kínál a tanuláshoz és a koncentrációhoz.\nA 2025-ös Student HackPad versenyre készítettem, ahol 215-ből a legjobb 24-85 közé került..",
         projectstitle: "Projektek:",
         projectssubtitle: "Íme néhány projektem:",
@@ -65,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function chooseQuote() {
-    const keys = ["quote1", "quote2", "quote3"]
+    const keys = ["quote1", "quote2", "quote3", "quote4"];
     const randomKey = keys[Math.floor(Math.random() * keys.length)];
     document.getElementById("quote").dataset.key = randomKey;
     console.log(randomKey);
