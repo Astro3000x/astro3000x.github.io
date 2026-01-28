@@ -75,6 +75,12 @@ function chooseQuote() {
 };
 
 chooseQuote();
+
+tspawnaudio = new Audio("audio/tspawn.mp3")
+
+function tspawn() {
+    tspawnaudio.play();
+}
 /*
 function spinImage() {
     document.getElementById("imagetospin").style.transform = "rotate(1deg)"
