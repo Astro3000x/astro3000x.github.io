@@ -99,7 +99,6 @@ body {
     bottom: 0;
     right: 0;
     margin: auto; /* This magic centers the absolutely positioned element */
-    overflow: hidden;
 }
 
 @media (max-width: 768px) {
@@ -423,3 +422,9 @@ body {
     animation-delay: 4s;
 }
 
+#chicken-container {
+    position: absolute;
+    top: 825px;
+    right: 20px;
+    cursor: pointer;
+}
