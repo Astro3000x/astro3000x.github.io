@@ -101,3 +101,35 @@ body {
     border-radius: 10px;
     border-color: #444;
 }
+
+.python {
+    background-color: #306998;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.javascript {
+    background-color: #f0db4f;
+    color: black;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.flask {
+    background-color: #9c5f29;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.gtfs {
+    background-color: #3ab256;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+}
