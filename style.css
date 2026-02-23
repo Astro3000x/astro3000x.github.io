@@ -428,3 +428,7 @@ body {
     right: 20px;
     cursor: pointer;
 }
+
+.webring:visited {
+    color: white;
+}
