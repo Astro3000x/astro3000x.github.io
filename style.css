@@ -84,7 +84,6 @@ body {
 
 .centered-box {
     width: 400px; /* Set a fixed width for the box */
-    height: 450px; /* Set a fixed height for the box */
     color: #fff;
     background-color: rgba(255, 255, 255, 0.25);
     border: 1px solid #ccc; /* Box border */
@@ -92,6 +91,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for "floating" effect */
     padding: 20px;
     text-align: center;
+    align-self: center;
     /* The core centering properties */
     position: absolute; /* Position relative to the nearest positioned ancestor (or body) */
     top: 0;
