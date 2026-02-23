@@ -84,7 +84,7 @@ body {
 
 .centered-box {
     width: 400px; /* Set a fixed width for the box */
-    height: 400px; /* Set a fixed height for the box */
+    height: 450px; /* Set a fixed height for the box */
     color: #fff;
     background-color: rgba(255, 255, 255, 0.25);
     border: 1px solid #ccc; /* Box border */
@@ -424,7 +424,7 @@ body {
 
 #chicken-container {
     position: absolute;
-    top: 825px;
+    top: 650px;
     right: 20px;
     cursor: pointer;
 }
