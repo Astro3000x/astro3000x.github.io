@@ -1,0 +1,25 @@
+body {
+    align-items: left;
+    font-family: "Times New Roman", Times, serif;
+    padding-left: 10px;
+    background-color: rgb(214, 202, 186);
+}
+
+
+
+body {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+a {
+    color: maroon;
+}
+
+a:visited {
+    color: maroon;
+}
