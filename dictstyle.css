@@ -2,10 +2,33 @@ body {
     align-items: left;
     font-family: "Times New Roman", Times, serif;
     padding-left: 10px;
+    padding-right: 10px;
     background-color: rgb(214, 202, 186);
 }
 
 
+body {
+  color: #000000;
+  background: fixed
+      linear-gradient(#000000, #000000 6px, transparent 6px, transparent),
+    fixed linear-gradient(transparent, #fff 100%),
+    fixed
+      repeating-linear-gradient(
+        #efefef,
+        #efefef 1px,
+        transparent 1px,
+        transparent 30px
+      ),
+    fixed
+      repeating-linear-gradient(
+        to right,
+        rgb(214, 202, 186),
+        rgb(214, 202, 186) 1px,
+        transparent 1px,
+        transparent 30px
+      )
+      white;
+}
 
 body {
   font-family: "Noto Serif", serif;
