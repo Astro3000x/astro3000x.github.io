@@ -30,18 +30,14 @@
           <a href="https://dottwav.neocities.org/circle" class="webring">&lt;&lt;&lt; Adam</a> <a href="https://henryvaniersel.ca/" class="webring">Henry &gt;&gt;&gt;</a>
         </div>
       <p id="intro">I don't have many projects to show here yet, so if you're interested in collaborating, let me know at astro@astro3000.dev.</p>
-      <p class="math" title="Testing MathJax.">$$\frac{a^2}{b^2}\cdot\frac{b^2}{a^2} = 1$$</p>
-      <p id="music"><b>Good Music:</b><br>
-        Wish You Were Here - Pink Floyd,
-        Old Man - Neil Young,<br>
-        If You Could Read My Mind - Gordon Lightfoot,
-        A Horse With No Name - America,<br>
-        Courage - The Tragically Hip,
-        The Suburbs - Arcade Fire
-      </p>
+      <p class="math" title="Testing MathJax." style="display: none;">$$a\neq0$$$$b\neq0$$$$\frac{a^2}{b^2}\cdot\frac{b^2}{a^2} = 1$$</p>
       <p id="projects">
         <b>Projects:</b><br>
         <a href="https://transitinfo.astro3000.dev" target="_blank">TransitInfo</a> - Real-time and predicted transit vehicle locations in the Metro Vancouver Area. Check out the <a href="https://github.com/Astro3000x/transitinfo">Github</a> for the latest updates.<br>
+      </p>
+      <p id="functions">
+        <b>Functions:</b><br><br>
+        <button onclick="startXsquared()">$$y = x^2$$</button> <button onclick="startXplus2()">$$y = x + 2$$</button> <button onclick="startXcubed()">$$y = x^3$$</button>
       </p>
       <p id="hardware">
         <b>Hardware:</b><br>
@@ -54,6 +50,9 @@
         Epiphone J-45 Studio<br>
         Line 6 Micro Spider 6W<br>
       </p>
-    </div>    
+      <a href="javascript:music()" style="font-size: xx-small;">Pssst</a>
+    </div>
+    <canvas id="graphCanvas"></canvas>
+    <script src="script.js"></script>
   </body>
 </html>
