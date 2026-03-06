@@ -94,3 +94,145 @@ while (i = true) {
     }, 100);
 }
 */
+let songs = ["https://www.youtube.com/watch?v=EPUMoXhmNWI"]
+function music() {
+    window.open(songs[Math.floor(Math.random() * songs.length)], "_blank");
+}
+
+const canvas = document.getElementById("graphCanvas");
+const ctx = canvas.getContext("2d");
+
+let px = 0;
+
+function startXsquared() {
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+
+    px = 0;
+
+    ctx.beginPath();
+
+    requestAnimationFrame(drawStepXsquared);
+}
+
+function drawStepXsquared() {
+
+    const scale = 30;
+
+    const centerX = Math.floor(canvas.width / (2 * scale)) * scale;
+    const centerY = Math.floor(canvas.height / (2 * scale)) * scale;
+
+    let x = (px - centerX) / scale;
+
+    let y = x * x;
+
+    let py = centerY - y * scale;
+
+    if (px === 0) {
+        ctx.moveTo(px, py);
+    } else {
+        ctx.lineTo(px, py);
+    }
+
+    ctx.strokeStyle = "#800000";
+    ctx.lineWidth = 2;
+    ctx.stroke();
+
+    px += 5;
+
+    if (px < canvas.width) {
+        requestAnimationFrame(drawStepXsquared);
+    }
+}
+
+
+function startXplus2() {
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+
+    px = 0;
+
+    ctx.beginPath();
+
+    requestAnimationFrame(drawStepXplus2);
+}
+
+function drawStepXplus2() {
+
+    const scale = 30;
+
+    const centerX = Math.floor(canvas.width / (2 * scale)) * scale;
+    const centerY = Math.floor(canvas.height / (2 * scale)) * scale;
+
+    let x = (px - centerX) / scale;
+
+    let y = x + 2;
+
+    let py = centerY - y * scale;
+
+    if (px === 0) {
+        ctx.moveTo(px, py);
+    } else {
+        ctx.lineTo(px, py);
+    }
+
+    ctx.strokeStyle = "#800000";
+    ctx.lineWidth = 2;
+    ctx.stroke();
+
+    px += 5;
+
+    if (px < canvas.width) {
+        requestAnimationFrame(drawStepXplus2);
+    }
+}
+
+function startXcubed() {
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+
+    px = 0;
+
+    ctx.beginPath();
+
+    requestAnimationFrame(drawStepXcubed);
+}
+
+function drawStepXcubed() {
+
+    const scale = 30;
+
+    const centerX = Math.floor(canvas.width / (2 * scale)) * scale;
+    const centerY = Math.floor(canvas.height / (2 * scale)) * scale;
+
+    let x = (px - centerX) / scale;
+
+    let y = x * x * x;
+
+    let py = centerY - y * scale;
+
+    if (px === 0) {
+        ctx.moveTo(px, py);
+    } else {
+        ctx.lineTo(px, py);
+    }
+
+    ctx.strokeStyle = "#800000";
+    ctx.lineWidth = 2;
+    ctx.stroke();
+
+    px += 5;
+
+    if (px < canvas.width) {
+        requestAnimationFrame(drawStepXcubed);
+    }
+}
