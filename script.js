@@ -81,22 +81,19 @@ tspawnaudio = new Audio("audio/tspawn.mp3")
 function tspawn() {
     tspawnaudio.play();
 }
-/*
-function spinImage() {
-    document.getElementById("imagetospin").style.transform = "rotate(1deg)"
-}
 
-let i = true
-
-while (i = true) {
-    setTimeout(() => {
-        spinImage()
-    }, 100);
-}
-*/
 let songs = ["https://www.youtube.com/watch?v=EPUMoXhmNWI"]
 function music() {
     window.open(songs[Math.floor(Math.random() * songs.length)], "_blank");
+}
+
+function showReset() {
+    document.getElementById("reset").style.display = "block";
+    document.getElementById("functions").style.display = "none";
+}
+
+function reset() {
+    window.location.reload();
 }
 
 const canvas = document.getElementById("graphCanvas");
@@ -116,6 +113,7 @@ function startXsquared() {
     ctx.beginPath();
 
     requestAnimationFrame(drawStepXsquared);
+    showReset();
 }
 
 function drawStepXsquared() {
@@ -161,6 +159,7 @@ function startXplus2() {
     ctx.beginPath();
 
     requestAnimationFrame(drawStepXplus2);
+    showReset();
 }
 
 function drawStepXplus2() {
@@ -205,6 +204,7 @@ function startXcubed() {
     ctx.beginPath();
 
     requestAnimationFrame(drawStepXcubed);
+    showReset();
 }
 
 function drawStepXcubed() {
