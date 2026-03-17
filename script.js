@@ -101,6 +101,26 @@ const ctx = canvas.getContext("2d");
 
 let px = 0;
 
+/*const scale = 30;
+
+const centerX = Math.floor(canvas.width / (2 * scale)) * scale;
+const centerY = Math.floor(canvas.height / (2 * scale)) * scale;
+
+// Draw axes
+ctx.beginPath();
+
+// Y-axis (vertical line)
+ctx.moveTo(centerX, 0);
+ctx.lineTo(centerX, canvas.height);
+
+// X-axis (horizontal line)
+ctx.moveTo(0, centerY);
+ctx.lineTo(canvas.width, centerY);
+
+ctx.strokeStyle = "black";
+ctx.lineWidth = 2;
+ctx.stroke();*/
+
 function startXsquared() {
 
     canvas.width = window.innerWidth;
@@ -236,3 +256,53 @@ function drawStepXcubed() {
         requestAnimationFrame(drawStepXcubed);
     }
 }
+
+
+function startFunc4() {
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+
+    px = 0;
+
+    ctx.beginPath();
+
+    requestAnimationFrame(drawStepFunc4);
+    showReset();
+}
+
+function drawStepFunc4() {
+
+    const scale = 30;
+
+    const centerX = Math.floor(canvas.width / (2 * scale)) * scale;
+    const centerY = Math.floor(canvas.height / (2 * scale)) * scale;
+
+    let x = (px - centerX) / scale;
+
+    let y = (4 * (x * x)) + (3 * x) + (2);
+    //let y = (4 * (x^2)) + (3 * x) + (2);
+
+    let py = centerY - y * scale;
+
+    if (px === 0) {
+        ctx.moveTo(px, py);
+    } else {
+        ctx.lineTo(px, py);
+    }
+
+    ctx.strokeStyle = "#800000";
+    ctx.lineWidth = 2;
+    ctx.stroke();
+
+    px += 5;
+
+    if (px < canvas.width) {
+        requestAnimationFrame(drawStepFunc4);
+    }
+
+    console.log(4)
+}
+
